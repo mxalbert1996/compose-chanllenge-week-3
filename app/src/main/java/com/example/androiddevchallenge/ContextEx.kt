@@ -13,14 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.ui.theme
+package com.example.androiddevchallenge
 
-import androidx.compose.ui.graphics.Color
+import android.content.Context
+import android.util.TypedValue
+import androidx.annotation.AttrRes
 
-val pink100 = Color(0xFFFFF1F1)
-val pink900 = Color(0xFF3F2C2C)
-val green900 = Color(0xFF2D3B2D)
-val green300 = Color(0xFFB8C9B8)
-val white850 = Color.White.copy(alpha = 0.85f)
-val white150 = Color.White.copy(alpha = 0.15f)
-val gray = Color(0xFF232323)
+fun Context.resolveAttribute(@AttrRes resId: Int): TypedValue =
+    TypedValue().apply { theme.resolveAttribute(resId, this, true) }
+
+fun Context.getIntAttribute(@AttrRes resId: Int): Int = resolveAttribute(resId).data
