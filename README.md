@@ -1,7 +1,6 @@
 # Bloom
 
-![Workflow result](https://github.com/<OWNER>/<REPOSITORY>/workflows/Check/badge.svg)
-
+![Workflow result](https://github.com/mxalbert1996/compose-chanllenge-week-3/workflows/Check/badge.svg)
 
 ## :scroll: Description
 
